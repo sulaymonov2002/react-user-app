@@ -1,0 +1,117 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .container {
+    font-family: "Quicksand", sans-serif;
+    width: 700px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 100px #00000033;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    .text {
+      h1 {
+        font-size: 60px;
+        margin: 0;
+        letter-spacing: -0.05em;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.form-login {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    .input-email {
+      label {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 5px;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      input {
+        width: 300px;
+        height: 48px;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        outline: none;
+      }
+    }
+    .input-password {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      label {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 5px;
+      }
+      input {
+        width: 300px;
+        height: 48px;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        outline: none;
+      }
+    }
+  }
+  button {
+    background-image: linear-gradient(
+      90deg,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
+
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    height: 56px;
+    min-width: 180px;
+    line-height: 56px;
+    text-decoration: none;
+    padding: 0 35px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    &:hover {
+      transition: all 0.4s ease;
+      background-image: linear-gradient(
+        95deg,
+        #25aae1,
+        #40e495,
+        #30dd8a,
+        #2bb673
+      );
+      box-shadow: 0 4px 15px 0 rgb(49 196 190 / 75%);
+    }
+  }
+}
