@@ -2,16 +2,9 @@ import React, { useState } from "react";
 
 import cls from "./login.module.scss";
 
-interface LoginItemProps {
-  email: string;
-  password: string;
-  onChange?: () => void;
-}
+interface LoginItemProps {}
 
-const LoginItem: React.FC = () => {
-  // const [userEmail, setUserEmail] = useState("");
-  // const [userpassword, setPasword] = useState("");
-
+const LoginItem: React.FC<LoginItemProps> = () => {
   return (
     <div className={cls.wrapper}>
       <div className={cls.container}>
